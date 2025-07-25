@@ -1,13 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
+ 
   box-sizing: border-box;
 }
 
 body {
   font-family: "Noto Serif", serif;
-  max-width: 1000px;
+   max-width: 1000px;
   margin: 0 auto;
+ 
 }
 /* sheard styles */
 .color-1 {
@@ -94,7 +96,6 @@ body {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
- 
 }
 .card-title {
   padding: 10px;
@@ -116,7 +117,7 @@ body {
   color: #111111;
   line-height: 20px;
 }
-.btn-primary{
+.btn-primary {
   background-color: rgb(233, 90, 8);
   color: #ffff;
   padding: 20px;
@@ -128,9 +129,7 @@ body {
 }
 /* flower */
 .flower {
-  
-
- margin: 135px auto;
+  margin: 135px auto;
 }
 .flower-point {
   display: flex;
@@ -187,7 +186,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(assets/deal-ana.png),linear-gradient(rgba(0, 0, 0, 0.4));
+  background-image: url(assets/deal-ana.png),
+    linear-gradient(rgba(0, 0, 0, 0.4));
 }
 .left-container-2 {
   position: relative;
@@ -198,7 +198,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(assets/deal-bloom.png),linear-gradient(rgba(0, 0, 0, 0.4));
+  background-image: url(assets/deal-bloom.png),
+    linear-gradient(rgba(0, 0, 0, 0.4));
 }
 .title {
   color: white;
@@ -241,13 +242,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(assets/deal-zabo.png),linear-gradient(rgba(0, 0, 0, 0.4));
+  background-image: url(assets/deal-zabo.png),
+    linear-gradient(rgba(0, 0, 0, 0.4));
 }
-
-
 /* flower banner */
 .image-title {
- position: relative;
+  position: relative;
+  width: 100%;
+  padding: 100px 0;
   height: 100%;
   background-size: cover;
   background-position: center;
@@ -255,26 +257,24 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(assets/news-letter-bg.png),linear-gradient(rgba(0, 0, 0, 0.4));
+  background-image: url(assets/news-letter-bg.png),
+    linear-gradient(rgba(0, 0, 0, 0.4));
 }
-.subcrib{
+.subcrib {
   background-color: white;
   width: 50%;
 }
-.image-title h1{
+.image-title h1 {
   font-size: 50px;
   font-weight: 700;
   color: white;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
-
 }
-.flower-banner{
-  width: 100%;
+.flower-banner {
   height: 500px;
   margin-bottom: 50px;
-  padding: 0;
-
 }
+
 /* footer */
 .footer {
   margin: 50px;
@@ -289,10 +289,10 @@ body {
 }
 .footer a {
   text-decoration: none;
-  /* margin-right: 100px; */
+ 
 }
-.icon{
-  gap:32px;
+.icon {
+  gap: 32px;
 }
 
 @media (max-width: 568px) {
@@ -360,7 +360,7 @@ body {
   }
 
   /* flower */
-  .flower{
+  .flower {
     margin: 20px;
   }
   .flower-point {
@@ -378,34 +378,33 @@ body {
     line-height: 17px;
     gap: 20px;
     padding: 0 auto;
+  }
+  .flower-title h1 {
+    font-size: 24px;
     
   }
-  .flower-title h1{
-    font-size: 24px;
-   
-  }
   /* deals */
-  .deals-title p{
+  .deals-title p {
     font-size: 13px;
     line-height: 16px;
   }
-  .deals{
+  .deals {
     width: 80%;
   }
- 
+
   /* flower card */
   .image {
     flex-direction: column;
     margin: 50px;
   }
-  .left-container-1{
+  .left-container-1 {
     font-size: 20px;
     font-weight: 700;
   }
- .title-right h1{
-  font-size: 20px;
-  font-weight: 700;
- }
+  .title-right h1 {
+    font-size: 20px;
+    font-weight: 700;
+  }
   .image-left {
     width: 100%;
   }
@@ -414,32 +413,28 @@ body {
     height: 180px;
   }
   /* flower banner section */
-  .flower-banner{
+  .flower-banner {
     height: 275px;
   }
-  .image-title h1{
+  .image-title h1 {
     font-size: 20px;
     font-weight: 700;
     text-align: center;
   }
 
-
   /* footer */
   .footer {
     flex-direction: column;
     align-content: start;
-    margin:;
     margin-top: 50px;
-
   }
-  .footer-title img{
+  .footer-title img {
     width: 50%;
   }
   .ankor {
     display: flex;
     flex-direction: column;
     margin-right: 170px;
-    
   }
   .footer-icon {
     display: flex;
