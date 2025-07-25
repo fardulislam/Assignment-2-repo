@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-  padding: 0;
-
   box-sizing: border-box;
 }
 
@@ -61,11 +59,12 @@ body {
   line-height: 60px;
 }
 .banner-left p {
-  font-size: 20px;
+  font-size: 14px;
 }
+/* our plants */
 .our-plants {
-  max-width: 880px;
-  margin: 120px auto;
+  width: 70%;
+  margin: 120px;
   text-align: center;
   line-height: 25px;
 }
@@ -74,7 +73,7 @@ body {
   font-weight: 700;
 }
 .our-plants p {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 400;
 }
 /* card */
@@ -95,7 +94,7 @@ body {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  /* max-width: 100%; */
+ 
 }
 .card-title {
   padding: 10px;
@@ -117,20 +116,21 @@ body {
   color: #111111;
   line-height: 20px;
 }
-.btn-primary {
+.btn-primary{
   background-color: rgb(233, 90, 8);
   color: #ffff;
-  padding: 20px 70px;
+  padding: 20px;
   border-radius: 8px;
   border: none;
   font-size: 16px;
   font-weight: 600;
+  width: 100%;
 }
 /* flower */
 .flower {
-  max-width: 1440px;
-  margin: 200px auto;
-  margin-bottom: 135px;
+  
+
+ margin: 135px auto;
 }
 .flower-point {
   display: flex;
@@ -142,7 +142,7 @@ body {
   color: #111111;
 }
 .flower-title ul li {
-  font-size: 22px;
+  font-size: 17px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.5);
   margin-bottom: 20px;
@@ -153,31 +153,32 @@ body {
   height: 286px;
   margin-left: -50%;
   margin-right: -50%;
-  margin-top: -20%;
+  margin-top: -30%;
   margin-bottom: -20%;
 }
 /* text deals */
 .deals {
-  max-width: 100%;
+  width: 65%;
   margin: 120px auto;
   text-align: center;
   line-height: 25px;
 }
 /* image set */
-.image{
+.image {
   display: flex;
   gap: 20px;
+  margin-bottom: 120px;
 }
-.image-left{
+.image-left {
   display: flex;
   flex-direction: column;
   gap: 20px;
   width: 30%;
 }
-.image-right{
-  width: 60%;
+.image-right {
+  width: 70%;
 }
-.left-container{
+.left-container-1 {
   position: relative;
   border-radius: 20px;
   height: 180px;
@@ -186,47 +187,97 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url(assets/deal-ana.png),linear-gradient(rgba(0, 0, 0, 0.4));
 }
-
-.left-container{
-  background-image: url(assets/deal-ana.png);
-  background-image: url(assets/deal-bloom.png);
+.left-container-2 {
+  position: relative;
+  border-radius: 20px;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(assets/deal-bloom.png),linear-gradient(rgba(0, 0, 0, 0.4));
 }
-
-.title{
+.title {
   color: white;
   text-align: center;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.7);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
 }
-.title h2{
+.title h2 {
   font-size: 20px;
   font-weight: 700;
 }
-.title h1{
+.title-right {
+  color: white;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+.title-right h1 {
   font-size: 36px;
   font-weight: 800;
-  
 }
-.title a{
+.title-right a {
   color: white;
   text-decoration: underline;
   font-weight: 800;
   display: inline-block;
   margin-top: 8px;
 }
-.right-container{
-  background-image: url(assets/deal-zabo.png);
+.title a {
+  color: white;
+  text-decoration: underline;
+  font-weight: 800;
+  display: inline-block;
+  margin-top: 8px;
 }
-.image{
-  height: 380px;
+.right-container {
+  position: relative;
+  border-radius: 20px;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(assets/deal-zabo.png),linear-gradient(rgba(0, 0, 0, 0.4));
 }
 
-/* colorful */
 
+/* flower banner */
+.image-title {
+ position: relative;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(assets/news-letter-bg.png),linear-gradient(rgba(0, 0, 0, 0.4));
+}
+.subcrib{
+  background-color: white;
+  width: 50%;
+}
+.image-title h1{
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+
+}
+.flower-banner{
+  width: 100%;
+  height: 500px;
+  margin-bottom: 50px;
+  padding: 0;
+
+}
 /* footer */
 .footer {
-  
-  margin: 50px ;
+  margin: 50px;
   display: flex;
 }
 
@@ -240,6 +291,9 @@ body {
   text-decoration: none;
   /* margin-right: 100px; */
 }
+.icon{
+  gap:32px;
+}
 
 @media (max-width: 568px) {
   .navber {
@@ -247,14 +301,13 @@ body {
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
-    margin: 20px auto;
-    overflow: hidden;
+    margin: 20px;
   }
   .list-item .hidden {
     display: none;
   }
   .banner {
-    margin: 13px auto;
+    margin: 13px;
   }
   img {
     width: 100%;
@@ -280,7 +333,10 @@ body {
     text-align: left;
   }
   .our-plants {
-    margin: 65px 28px;
+    width: 80%;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 auto;
   }
   .our-plants p {
     font-size: 14px;
@@ -297,12 +353,16 @@ body {
   /* card */
   .card {
     grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 20px;
   }
   .btn-primary {
-    padding: 10px 20px;
+    font-size: 12px;
   }
 
   /* flower */
+  .flower{
+    margin: 20px;
+  }
   .flower-point {
     flex-direction: column;
     margin: 0 auto;
@@ -318,32 +378,73 @@ body {
     line-height: 17px;
     gap: 20px;
     padding: 0 auto;
+    
+  }
+  .flower-title h1{
+    font-size: 24px;
+   
+  }
+  /* deals */
+  .deals-title p{
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .deals{
+    width: 80%;
+  }
+ 
+  /* flower card */
+  .image {
+    flex-direction: column;
+    margin: 50px;
+  }
+  .left-container-1{
+    font-size: 20px;
+    font-weight: 700;
+  }
+ .title-right h1{
+  font-size: 20px;
+  font-weight: 700;
+ }
+  .image-left {
+    width: 100%;
+  }
+  .image-right {
+    width: 100%;
+    height: 180px;
+  }
+  /* flower banner section */
+  .flower-banner{
+    height: 275px;
+  }
+  .image-title h1{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+
+  /* footer */
+  .footer {
+    flex-direction: column;
+    align-content: start;
+    margin:;
+    margin-top: 50px;
+
+  }
+  .footer-title img{
+    width: 50%;
+  }
+  .ankor {
+    display: flex;
+    flex-direction: column;
+    margin-right: 170px;
+    
   }
   .footer-icon {
     display: flex;
     margin-top: 20px;
     max-width: 20%;
     gap: 20px;
-  }
-  /* text */
-/* flower card */
-.image{
-  flex-direction: column;
-}
-.title h1{
-  font-size: 20px;
-}
-.left-container{
-  width: 100%;
-}
-
-  /* footer */
-  .footer {
-    flex-direction: column;
-  }
-  .ankor {
-    display: flex;
-    flex-direction: column;
-    
   }
 }
